@@ -1,0 +1,135 @@
+@media (max-width: 1200px) {
+}
+
+
+@media (max-width: 991px) {
+    .container {
+        margin: 0 30px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        margin: 0 20px;
+    }   
+    .button {
+        width: 140px;
+        &_main {
+            width: 260px;
+        }
+    } 
+    .header {
+        &__official {
+            align-self: flex-end;
+            font-size: 11px;
+            span {
+                font-size: 16px;
+            }
+        }
+        &__phone {
+            font-size: 14px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 36px;
+            line-height: 36px;            
+        }
+        &__subheader{
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+    .advantages {
+        &__item {
+            width: 180px;
+        }
+        &__subheader {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+    }
+}
+
+
+@media (max-width: 575px) {
+    .header {
+        margin-top: -20px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        &__logo, &__phone, &__official {margin-top: 20px;}
+        &__official {
+            order:3;
+            margin-top: 20px;
+        }
+    }
+    .promo {
+        &__icons {
+            margin-top: 0px;
+            width: 100%;
+            justify-content: space-around;   
+            flex-wrap: wrap;     
+        }
+        &__icon {
+            margin-top: 40px;
+            width: 300px;
+        }
+    }
+    .advantages {
+        &__wrapper {
+            margin-top: 65px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap; 
+        }
+        &__item {
+            width: 300px;
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+
+@media (max-width: 420px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        &__logo, &__official {
+            width: 250px;
+             order: 0;
+        }
+        &__phone {
+            justify-content: flex-start;
+            align-self: center;
+            order: 0;
+        }
+    }
+    .advantages {
+        &__wrapper {
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap; 
+        }
+        &__item {
+            margin: 0 auto;
+            width: 280px;
+            margin-bottom: 30px;
+            img{
+                margin-bottom: 5px;
+            }
+        }
+        &__descr {
+            margin-top: 10px;
+        }
+    }
+}
